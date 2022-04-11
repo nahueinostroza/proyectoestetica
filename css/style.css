@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0
+}
+
+.titulo1{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.titulo2{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+
+}
+
+.titulo3{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.texto1{
+    color: black;
+    text-align: center;
+
+}
+
+
+
+.colorvioleta {
+    color: blueviolet;
+
+}
+body{
+    background-color: rgb(219, 155, 81);
+}
+.colorblanco1{
+    color: white;
+    text-align: center;
+}
+.colorblanco2{
+    color: white;
+    text-align: center;
+}
+.colorblanco3{
+    color: white;
+    text-align: center;
+}
+.colorblanco4{
+    color: white;
+    text-align: center;
+}
+.colorblanco5{
+    color: white;
+    text-align: center;
+}
+
+
+.textolista{
+    font-size: 1rem;
+}
+
+.imagen-principal {
+    grid-area:imagen-principal;
+    text-align: center;
+}
+.imagen-principal-imagen{
+    border: 4px solid black;
+    
+}
+
+.menu{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    color: black;
+    text-decoration: none;
+    grid-area: menu1;
+    display: flex;
+    justify-content: center;
+    }
+.menu-li{
+    display: inline-block;
+}
+.menu-li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+
+
+
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "menu"
+    "titulo1"
+    "colorblanco1"
+    "titulo2"
+    "texto1"
+    "colorblanco2"
+    "titulo3"
+    "colorblanco3"
+    "imagen-principal"
+    "footer";
+    justify-content: center;
+    width: 100%;
+}
+@media screen and (min-width: 1024px) {
+
+    
+}
+    
+
+.border{
+    border: 1px solid black;
+}
+
+menu{
+    grid-area: menu;
+    width: 100%;
+    height: auto;
+    
+}
+footer{
+    grid-area: footer;
+    width: 100%;
+    height: auto;
+
+}
+.titulo1{
+    grid-area: titulo1;
+    width: 100%;
+    height: auto;
+}
+.titulo2{
+    grid-area: titulo2;
+    width: 100%;
+    height: auto;
+}
+.titulo3{
+    grid-area: titulo3;
+    width: 100%;
+    height: auto;
+}
+.colorblanco1{
+    grid-area: colorblanco1;
+    width: 100%;
+    height: auto;
+}
+.colorblanco2{
+    grid-area: colorblanco2;
+    width: 100%;
+    height: auto;
+}
+.colorblanco3{
+    grid-area: colorblanco3;
+    width: 100%;
+    height: auto;
+}
+.texto1{
+    grid-area: texto1;
+    width: 100%;
+    height: auto;
+}
