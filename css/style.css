@@ -115,7 +115,7 @@ body{
 @media screen and (min-width: 1024px) {
 
     
-}
+
     
 
 .border{
@@ -168,4 +168,5 @@ footer{
     grid-area: texto1;
     width: 100%;
     height: auto;
+}
 }
