@@ -118,15 +118,21 @@ body{
     animation-duration: 1s;
 }
 
-.titulo2{
-    animation-name: aparecer;
-    animation-duration: 1s;
-}
+
 
 .titulo3{
     animation-name: aparecer;
     animation-duration: 1s;
 }
+.colorblanco4{
+    animation-name: aparecer;
+    animation-duration: 3s;
+}
+.colorblanco5{
+    animation-name: aparecer;
+    animation-duration: 3s;
+}
+
 
 ul{
     list-style: none;
