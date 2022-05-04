@@ -1,30 +1,27 @@
+@import "maps";
+
 *{
     margin:0;
     padding:0
 }
-
-.titulo1{
+@mixin titulos{
     color: rgb(183, 143, 69);
     font-size: 1.5rem;
     font-family: 'Playfair Display', serif;
     text-align: center;
     
 }
+.titulo1{
+    @include titulos;
+}
 
 .titulo2{
-    color: rgb(183, 143, 69);
-    font-size: 1.5rem;
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-
+    @include titulos;
 }
 
 .titulo3{
-    color: rgb(183, 143, 69);
-    font-size: 1.5rem;
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-}
+   @include titulos;
+    }
 .texto1{
     color: black;
     text-align: center;
@@ -46,17 +43,15 @@ body{
     text-align: center;
 }
 .colorblanco2{
-    color: black;
-    text-align: center;
-}
+    @extend .colorblanco1;
+    }
 .colorblanco3{
     color:black;
     text-align: center;
 }
 .colorblanco4{
-    color:black;
-    text-align: center;
-    padding-left: 0;
+     @extend .colorblanco1; 
+    padding-left:0; 
 }
 .colorblanco5{
     color: black;
@@ -98,10 +93,6 @@ body{
     text-decoration: none;
     color: black;
     margin-left: 10px;
-}
-.insta{
-    font-family: 'Playfair Display', serif;
-
 }
 
 @keyframes aparecer {
@@ -218,4 +209,5 @@ footer{
     width: 100%;
     height: auto;
 }
+
 }

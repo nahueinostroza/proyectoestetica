@@ -1,3 +1,15 @@
+.instagram {
+  color: black;
+}
+
+.wpp {
+  color: green;
+}
+
+.e-mail {
+  color: blue;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -37,12 +49,7 @@ body {
   background-color: #EDEBDD;
 }
 
-.colorblanco1 {
-  color: black;
-  text-align: center;
-}
-
-.colorblanco2 {
+.colorblanco1, .colorblanco4, .colorblanco2 {
   color: black;
   text-align: center;
 }
@@ -53,8 +60,6 @@ body {
 }
 
 .colorblanco4 {
-  color: black;
-  text-align: center;
   padding-left: 0;
 }
 
@@ -99,10 +104,6 @@ body {
   text-decoration: none;
   color: black;
   margin-left: 10px;
-}
-
-.insta {
-  font-family: "Playfair Display", serif;
 }
 
 @keyframes aparecer {
@@ -183,7 +184,7 @@ ol {
     height: auto;
   }
 
-  .colorblanco1 {
+  .colorblanco1, .colorblanco2, .colorblanco4 {
     grid-area: colorblanco1;
     width: 100%;
     height: auto;
