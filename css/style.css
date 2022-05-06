@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .instagram {
   color: black;
 }
@@ -205,6 +206,16 @@ ol {
   .texto1 {
     grid-area: texto1;
     width: 100%;
+    height: auto;
+  }
+
+  .tamaño {
+    width: 58%;
+    margin: auto;
+  }
+
+  .mapa {
+    margin: auto;
     height: auto;
   }
 }
