@@ -10,3 +10,17 @@ while (dato != "ESC") {
     alert ("el tratamiento ingresado es " + dato)
     dato = prompt("ingrese otro tratamiento a la lista o ESC para para salir")
 }
+
+
+const suma = (n1, n2) => n1 + n2 
+const resta = (n1, n2) => n1 - n2 
+
+const iva = valor => valor * 0.21 
+
+let precioDetrat = 2500
+let descuento = 500
+
+let precioconiva = resta(suma(precioDetrat, iva(precioDetrat)), descuento);
+console.log(precioconiva)
+
+
