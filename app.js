@@ -12,15 +12,16 @@ while (dato != "ESC") {
 }
 
 
-const suma = (n1, n2) => n1 + n2 
-const resta = (n1, n2) => n1 - n2 
+const suma = (n1, n2, n3,n4) => n1 + n2 + n3 + n4 
 
 const iva = valor => valor * 0.21 
 
-let precioDetrat = 2500
-let descuento = 500
+let precioDemasaje = 2500
 
-let precioconiva = resta(suma(precioDetrat, iva(precioDetrat)), descuento);
+let precioDetratfacial = 2100
+
+
+let precioconiva = suma(precioDemasaje,iva(precioDemasaje), precioDetratfacial,iva(precioDetratfacial));
 console.log(precioconiva)
 
 
