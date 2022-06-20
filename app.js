@@ -109,7 +109,7 @@
         }
     }
     
-    let modelo=prompt("¿Qué tratamiento queres hacerte? facial/masajes ").toUpperCase();
+    let tratamiento=prompt("¿Qué tratamiento queres hacerte? facial/masajes ").toUpperCase();
 
     let tratamientos = []
 
@@ -117,7 +117,7 @@
     let tratamiento2= new tratamiento ("masajes");
 
     tratamientos.push (tratamiento1);
-    tratamientos.push (tratamiento2)
+    tratamientos.push (tratamiento2);
 
     if (tratamientos="facial") {
         console.log("aplicador de micropuncion")
