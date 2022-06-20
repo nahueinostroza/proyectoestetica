@@ -109,8 +109,9 @@
         }
     }
     
-    let tratamiento=prompt("¿Qué tratamiento queres hacerte? facial/masajes ").toUpperCase();
+    let trat=prompt("¿Qué tratamiento queres hacerte? facial/masajes ").toUpperCase();
 
+    
     let tratamientos = []
 
     let tratamiento1= new tratamiento ("facial");
