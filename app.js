@@ -94,6 +94,8 @@
                 console.log("Se puede pagar en efectivo o tarjeta de debito")
             }
 
+    
+
 
 
 

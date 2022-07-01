@@ -1,28 +1,22 @@
-let enviar = document.getElementById("enviar")
 let formulario = document.getElementById("formulario")
+let enviar = document.getElementById("enviar")
 let borrar = document.getElementById("borrar")
 
-enviar.addEventListener("click", () =>{
-   
+formulario.addEventListener("submit",(e) => {
+  e.preventDefault()
+
+  verificarformulario()
+
   const content = document.createElement("div")
 
-content.innerHTML = `
-<img src="https://bloggerprise.net/wp-content/uploads/2015/08/Gracias-por-Contactarnos.png"/>
- `;
-
- formulario.append(content) 
-
- formulario.addEventListener("submit", verificarformulario);
-
-function verificarformulario(e){
-    e.preventDefault();
-    console.log(formulario.children[0].value);
-    console.log(formulario.children[1].value);
-}
-
-    
+  
+  content.innerHTML = `
+  <img src="https://bloggerprise.net/wp-content/uploads/2015/08/Gracias-por-Contactarnos.png"/>
+   `;
 })
 
-borrar.addEventListener("click", () =>{
-    formulario.innerHTML=""
- })
+function verificarformulario(e){
+  
+  console.log(formulario.children[0].value);
+  console.log(formulario.children[1].value);
+}
