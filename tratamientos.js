@@ -10,3 +10,4 @@ localStorage.setItem("tratamientos",JSON.stringify(tratamientos));
 
 let lista = localStorage.getItem("tratamientos");
 console.log(JSON.parse(lista));
+
