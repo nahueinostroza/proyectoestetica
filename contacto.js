@@ -10,14 +10,6 @@ function validarformulario(e) {
   
 }
 
-let boton =
-document.getElementById("enviar")
-boton.addEventListener("click", formenvi)
-
-function formenvi () {
-  alert ("formulario enviado");
-}
-
 let eliminar =
 document.getElementById("borrar")
 eliminar.onclick = () => elformulario.reset()

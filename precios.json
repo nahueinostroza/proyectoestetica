@@ -1,0 +1,52 @@
+[
+    {
+        "nombre":"Masaje sueco",
+        "precio":"$1800",
+        "duracion":"1h"
+    },
+    {
+        "nombre":"drenaje linfatico manual",
+        "precio":"$2300",
+        "duracion":"1h 30 minutos"
+    },
+    {
+        "nombre":"shiatsu",
+        "precio":"$2300",
+        "duracion":"1h 30 minutos"
+    },
+    {
+        "nombre":"masaje reflejos",
+        "precio":"$2500",
+        "duracion":"1h 30 minutos"
+    },
+    {
+        "nombre":"masaje deportivo",
+        "precio":"$2300",
+        "duracion":"1h"
+    },
+    {
+        "nombre":"Aplicador de micropuncion",
+        "precio":"$2000",
+        "duracion":"1h"
+    },
+    {
+        "nombre":"Radiofrecuencia",
+        "precio":"$2000",
+        "duracion":"40 minutos"
+    },
+    {
+        "nombre":"Mesoterapia virtual",
+        "precio":"$2300",
+        "duracion":"1h"
+    },
+    {
+        "nombre":"Alta frecuencia",
+        "precio":"$2300",
+        "duracion":"30 minutos"
+    },
+    {
+        "nombre":"Microdermoabrasión",
+        "precio":"$2000",
+        "duracion":"40/50 minutos"
+    }
+]
