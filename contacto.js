@@ -26,9 +26,9 @@ let enviar = document.getElementById("enviar");
 
 enviar.addEventListener("click", () => {
   Swal.fire({
-    position: 'top-end',
+    position: 'center',
     icon: 'success',
-    title: 'Your work has been saved',
+    title: 'El formulario se envio correctamente',
     showConfirmButton: false,
     timer: 1500
   })

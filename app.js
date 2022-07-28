@@ -7,57 +7,7 @@
     
     let tratamiento = prompt("¿Qué tratamiento queres hacerte? facial o masajes");
     
-
     
-   let tratamientos = []
-
-    let tratamiento1= new trat ("facial");
-    let tratamiento2= new trat ("masajes");
-
-    tratamientos.push (tratamiento1);
-    tratamientos.push (tratamiento2);
-
-    if (tratamiento === "facial") {
-        console.log("aplicador de micropuncion")
-    }
-
-    if (tratamiento ==="facial"){
-        console.log("radiofrecuencia")
-         }
-
-    if (tratamiento === "facial"){
-        console.log("mesoterapia virtual")
-    }
-
-    if (tratamiento === "facial"){
-        console.log("alta frecuencia")
-    }
-
-    if (tratamiento === "facial"){
-        console.log("microdermoabrasion")
-    }
-
-    if (tratamiento === "masajes"){
-        console.log("masaje sueco")
-    }
-
-    if (tratamiento === "masajes"){
-        console.log("drenaje linfatico manual")
-    }
-
-     if (tratamiento === "masajes"){
-        console.log("shiatsu")
-    }
-
-     if (tratamiento === "masajes"){
-        console.log("masaje reflejos")
-    }
-
-     if (tratamiento === "masajes"){
-        console.log("masaje deportivo")
-    }
-
-
     let URL=`precios.json`
 
 
@@ -83,6 +33,42 @@
                 }
     
 obtenerContenido(URL)
+
+let URLma=`masajes.json`
+
+
+    const obtenerPrecio = (URLma)=> {
+        let preciosAmostrar = ""
+        fetch(URLma)
+       .then((response)=> response.json())
+       .then( (data)=>{
+            for (contenido of data) {
+                preciosAmostrar += listadeprecios(contenido)
+            }
+            document.querySelector("#tablaprecios").innerHTML = preciosAmostrar
+       }) 
+    }
+    
+    const listadeprecios= (contenido)=> {
+        const {nombre, precio, duracion} = contenido
+        return    `<tr>
+                       <td>${nombre}</td>
+                       <td>${precio}</td>
+                       <td>${duracion}</td>
+                   </tr>`
+                }
+    
+obtenerContenido(URLma)
+
+if(tratamiento === facial){
+    console.log("URL");
+}
+
+else if(tratamiento === masajes){
+    console.log("URLma");
+}
+
+
 
           
 
